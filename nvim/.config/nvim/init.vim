@@ -12,6 +12,11 @@ nmap <C-n> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 let NERDTreeMinimalUI=1
 
+if (has('termguicolors'))
+  set termguicolors
+endif
+let g:material_theme_style='palenight'
+colorscheme material
 let g:lightline={'colorscheme': 'material_vim'}
 
 " vim-signify updatetime
@@ -20,13 +25,9 @@ set updatetime=100
 hi TrailingSpace guibg=red
 match TrailingSpace /\s\+$/
 
-if (has('termguicolors'))
-  set termguicolors
-endif
-let g:material_theme_style='palenight'
-colorscheme material
+nnoremap <M-CR> :botright split<Bar>resize 15<Bar>terminal<CR>
+tnoremap <Esc> <C-\><C-n>
 
-syntax on
 set number
 set cursorline
 set autoindent
