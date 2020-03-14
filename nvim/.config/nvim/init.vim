@@ -1,5 +1,6 @@
 call plug#begin('~/.local/share/nvim/site/plugged')
 
+Plug 'kaicataldo/material.vim'
 Plug 'preservim/nerdtree', {'on': 'NERDTreeToggle'}
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'mhinz/vim-signify'
@@ -11,7 +12,7 @@ nmap <C-n> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 let NERDTreeMinimalUI=1
 
-let g:lightline={'colorscheme': 'wombat'}
+let g:lightline={'colorscheme': 'material_vim'}
 
 " vim-signify updatetime
 set updatetime=100
@@ -19,7 +20,12 @@ set updatetime=100
 hi TrailingSpace guibg=red
 match TrailingSpace /\s\+$/
 
-set termguicolors
+if (has('termguicolors'))
+  set termguicolors
+endif
+let g:material_theme_style='palenight'
+colorscheme material
+
 syntax on
 set number
 set cursorline
