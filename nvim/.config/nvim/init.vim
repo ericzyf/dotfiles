@@ -13,6 +13,9 @@ let NERDTreeMinimalUI=1
 
 let g:lightline={'colorscheme': 'wombat'}
 
+" vim-signify updatetime
+set updatetime=100
+
 hi TrailingSpace guibg=red
 match TrailingSpace /\s\+$/
 
