@@ -21,6 +21,7 @@ endif
 let g:material_theme_style='palenight'
 colorscheme material
 let g:lightline={'colorscheme': 'material_vim'}
+hi CursorLineNR guifg=#00ff7f
 
 " vim-signify updatetime
 set updatetime=100
