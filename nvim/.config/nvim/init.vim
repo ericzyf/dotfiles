@@ -6,6 +6,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'mhinz/vim-signify'
 Plug 'itchyny/lightline.vim'
 Plug 'mbbill/undotree'
+Plug 'luochen1990/rainbow'
 
 call plug#end()
 
@@ -22,6 +23,8 @@ let g:material_theme_style='palenight'
 colorscheme material
 let g:lightline={'colorscheme': 'material_vim'}
 hi CursorLineNR guifg=#00ff7f
+
+let g:rainbow_active=1
 
 " vim-signify updatetime
 set updatetime=100
