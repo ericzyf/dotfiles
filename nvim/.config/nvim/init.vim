@@ -26,6 +26,7 @@ hi TrailingSpace guibg=red
 match TrailingSpace /\s\+$/
 
 nnoremap <M-CR> :botright split<Bar>resize 15<Bar>terminal<CR>
+autocmd TermOpen * startinsert
 tnoremap <Esc> <C-\><C-n>
 
 set number
