@@ -5,12 +5,15 @@ Plug 'preservim/nerdtree', {'on': 'NERDTreeToggle'}
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'mhinz/vim-signify'
 Plug 'itchyny/lightline.vim'
+Plug 'mbbill/undotree'
 
 call plug#end()
 
 nmap <C-n> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 let NERDTreeMinimalUI=1
+
+nnoremap <C-z> :UndotreeToggle<CR>
 
 if (has('termguicolors'))
   set termguicolors
