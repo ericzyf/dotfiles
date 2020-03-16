@@ -41,3 +41,5 @@ set cursorline
 set autoindent
 set mouse=a
 set lazyredraw
+set exrc
+set secure
