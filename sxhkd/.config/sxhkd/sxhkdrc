@@ -32,6 +32,10 @@ Print
 super + e
 	thunar
 
+# i3lock
+ctrl + l
+	i3lock -e -c 008080
+
 #
 # bspwm hotkeys
 #
