@@ -33,7 +33,7 @@ super + e
 	thunar
 
 # i3lock
-ctrl + l
+ctrl + alt + l
 	i3lock -e -c 008080
 
 #
