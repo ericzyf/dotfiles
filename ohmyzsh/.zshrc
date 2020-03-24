@@ -111,6 +111,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias rm="rm -v"
 alias cp="cp -iv"
+alias mv="mv -iv"
 alias reboot="systemctl reboot"
 alias poweroff="systemctl poweroff"
 
