@@ -1,12 +1,12 @@
 call plug#begin('~/.local/share/nvim/site/plugged')
 
-Plug 'kaicataldo/material.vim'
 Plug 'preservim/nerdtree', {'on': 'NERDTreeToggle'}
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'mhinz/vim-signify'
 Plug 'itchyny/lightline.vim'
 Plug 'mbbill/undotree'
 Plug 'luochen1990/rainbow'
+Plug 'rakr/vim-one'
 
 call plug#end()
 
@@ -19,10 +19,10 @@ nnoremap <C-z> :UndotreeToggle<CR>
 if (has('termguicolors'))
   set termguicolors
 endif
-let g:material_theme_style='palenight'
-colorscheme material
-let g:lightline={'colorscheme': 'material_vim'}
-hi CursorLineNR guifg=#00ff7f
+set background=dark
+let g:one_allow_italics=1
+colorscheme one
+let g:lightline={'colorscheme': 'one'}
 
 let g:rainbow_active=1
 
