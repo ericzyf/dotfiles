@@ -52,3 +52,4 @@
 ;; You can also try 'gd' (or 'C-c g d') to jump to their definition and see how
 ;; they are implemented.
 (add-hook 'java-mode-hook #'lsp)
+(+global-word-wrap-mode +1)
