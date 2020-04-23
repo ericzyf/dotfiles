@@ -7,6 +7,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'mbbill/undotree'
 Plug 'luochen1990/rainbow'
 Plug 'rakr/vim-one'
+Plug 'sheerun/vim-polyglot'
 
 call plug#end()
 
